@@ -1,0 +1,252 @@
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #0A192F;
+    --highlight-color: #4FCAB3;
+    --text-color: #f8f8ff;
+
+    /* ====== Transition ====== */
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BTNS & CMPNTS */
+
+button.btn.btn-outline-primary {
+    background-color: transparent;
+    color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+}
+
+button.btn.btn-outline-primary a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+button.btn.btn-outline-primary:hover {
+    background-color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
+    opacity: 0.6;
+}
+
+button.btn.btn-outline-primary:hover a {
+    color: var(--text-color);
+}
+
+.icons {
+    color: var(--highlight-color);
+}
+
+
+.icons:hover {
+    opacity: 0.5;
+    transition: 0.2;
+}
+
+span {
+    color: var(--highlight-color);
+    font-family: Arial, sans-serif; /* Set the font family */
+    font-weight: bold; /* Set the font weight */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+span:hover {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.heading-line {
+    border: none; /* Remove the default line */
+    border-top: 2px solid var(--highlight-color); /* Add a custom border on top */
+    margin-top: 20px; /* Adjust the margin as needed */
+    width: 350px; /* Adjust the width of the line as needed */
+    opacity: 1;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav .navbar-brand {
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+}
+
+/* Style for the default state of navbar-brand */
+nav .navbar-brand {
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    border-radius: 50%; /* Makes it circular */
+    padding: 8px; /* Adjust the padding to control the size */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Style for the hovered state of navbar-brand */
+nav .navbar-brand:hover {
+    border: 2px solid var(--highlight-color); /* Increase border width on hover */
+}
+
+.navbar .nav-link {
+    color: #F6F5FF;
+}
+
+.navbar .nav-link:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+    transition: all 0.7s ease;  
+}
+
+#nav-icon {
+    background-color: transparent;
+}
+
+#nav-icon:hover{
+    border: 2px solid var(--highlight-color); /* Add your preferred border color */
+    border-radius: 50%; /* Makes the border circular */
+    padding: 15px; /* Add padding to control the size of the circle */
+    transition: all 0.1s ease; /* Add smooth transition */    
+}
+
+#nav-icon i {
+    color: var(--highlight-color);
+}
+
+/* INTRO */
+
+.intro {
+    background-color: var(--primary-color);
+    color: #F6F5FF;
+}
+
+#intro-welcome {
+    color: var(--highlight-color)
+}
+
+/* ABOUT ME */
+
+.about-me {
+    background-color: var(--primary-color);
+    color: #F6F5FF;
+}
+
+.profile-picture-container img {
+    width: 80%; /* Ensure the image takes up the entire circle */
+    height: 60%; /* Ensure the image takes up the entire circle */
+    border: 2px solid var(--highlight-color);
+    box-shadow: red;
+}
+
+.techstack li {
+    list-style-type: none;
+}
+
+.techstack li::before {
+    font-family: 'Font Awesome 6 Free'; /* Use the Font Awesome font-family */
+    content: "\f005"; /* Use the Font Awesome icon Unicode (e.g., f005 for a star) */
+    margin-right: 10px; /* Adjust spacing between the icon and the list item text */
+    color: var(--highlight-color); /* Set the color of the icon */
+  }
+
+/* CURRICULUM */
+.curriculum {
+    background-color: var(--primary-color);
+    color: #F6F5FF;
+}
+
+/* PORTFOLIO */
+
+.portfolio-section {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.carousel .card{
+    border: 2px solid var(--highlight-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.s ease;
+}
+
+.card-img-top {
+    transition: transform 0.2s;
+  }
+
+  .card-img:hover img {
+    filter: grayscale(50%);
+  }
+
+.card-img-top {
+    transition: transform 0.2s;
+}
+
+.card-img:hover img {
+    filter: grayscale(20%);
+}
+  
+  .card-img:hover .download-btn {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#card-btn {
+    background-color: var(--text-color-lightbg);
+    border: none;
+    padding: 20px 20px;
+}
+
+#card-btn a {
+    color: var(--light-bg);
+}
+
+#allprojects {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Custom CSS to style the carousel controls */
+#carouselExample .carousel-control-prev,
+#carouselExample .carousel-control-next {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    color: var(--highlight-color);
+    position: relative;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 24px; /* Control font size */
+}
+
+/* CONTACT */
+
+.contact-form {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    padding-bottom: 5px;
+}
