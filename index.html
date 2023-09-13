@@ -52,12 +52,20 @@
 
     <div class="container-fluid intro py-4">
         <div class="container intro-text my-5">
+            <!-- <main class="container-animation">
+                <p>Hello 👋 I'm</p>
+                <section class="animation">
+                  <div class="first"><div>Vincent Michler</div></div>
+                  <div class="second"><div>Data Analyst & Scientist</div></div>
+                  <div class="third"><div>Web Developer</div></div>
+                </section>
+              </main> -->
             <p class="mb-4" id="intro-welcome">Welcome to my page! I am</p>
-            <h1 class="mb-3" id="intro-heading">Vincent Michler</h1>
+            <h1 class="mb-4" id="intro-heading">Vincent Michler</h1>
             <h2 class="mb-4" id="intro-heading2">I build things for the web.</h2>
             <p class="mb-4" id="intro-text">I’m a full-stack Data Analyst & Scientist focused in building exceptional digital products. <br>
                 Currently, I’m focused on building data analytics, human-centered products at Ingram Micro.</p>
-            <button class="btn btn-outline-primary me-3"><a href="mailto:vincent.michler94@gmail.com">Contact me</a></button>
+            <button class="btn btn-outline-primary me-3 my-4"><a href="mailto:vincent.michler94@gmail.com">Contact me</a></button>
             <a class="icons ms-2 me-2" href="https://www.github.com/vincm1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
             <a class="icons" href="https://www.linkedin.com/in/vincent-michler" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
@@ -66,8 +74,8 @@
     <div class="container-fluid about-me py-5" id="about-me">
         <div class="container align-items-end my-5" >
             <div class="row">
-                <div class="col-lg-6 profile-picture-container">
-                    <img src="./pictures/Vincent Michler.jpg" alt="Profile Picture" id="profile-picture">
+                <div class="col-lg-6 profile-picture-container pl-4">
+                    <img src="./pictures/me.jpg" alt="Profile Picture" id="profile-picture">
                 </div>
                 <div class="col-lg-6">
                     <div class="row heading">
@@ -106,33 +114,6 @@
         </div>
     </div>
 
-    <div class="container-fluid curriculum py-5">
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-4">
-                  <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                  </div>
-                </div>
-                <div class="col-8">
-                  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                    <h4 id="list-item-1">Item 1</h4>
-                    <p>...</p>
-                    <h4 id="list-item-2">Item 2</h4>
-                    <p>...</p>
-                    <h4 id="list-item-3">Item 3</h4>
-                    <p>...</p>
-                    <h4 id="list-item-4">Item 4</h4>
-                    <p>...</p>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
-    
     <div class="container-fluid portfolio-section py-5" id="portfolio">
         <div class="container pl-5 my-5">   
             <div class="row"> 
@@ -162,7 +143,7 @@
                             </a>  
                         </div>
                         <div class="d-flex col-lg-3 justify-content-end">
-                            <button class="btn btn-outline-primary">View All</button>     
+                            <button class="btn btn-outline-primary"><a href="https://github.com/vincm1" target="_blank" rel="noopener noreferrer">View All</a></button>     
                         </div>
                     </div>
                     <div class="carousel-inner">
@@ -176,7 +157,7 @@
                                         <p class="card-text">For my master thesis project I analyzed various <span>linear</span> and 
                                             <span>Deep Learning</span> RecSys for implicit customer purchase data of an IT-distributor.
                                         </p>
-                                        <button class="btn btn-outline-primary card" id="card-btn">
+                                        <button class="btn btn-outline-primary align-items-center" id="card-btn">
                                             <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
                                                 <i class="fa-solid fa-code fa-2xl"></i></a>
                                         </button>
@@ -217,12 +198,12 @@
                             <div class="d-flex justify-content-center">
                                 <!-- Card 1 -->
                                 <div class="card mx-2">
-                                    <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 1">
+                                    <img src="./pictures/portfolio_pictures/car.jpg" class="card-img-top" alt="car">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center py-2">Card 4</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <h5 class="card-title text-center py-2">Car Price predictor</h5>
+                                        <p class="card-text">Tested various Regression models on a Kaggle dataset for used cars.</p>
                                         <button class="btn btn-primary card" id="card-btn">
-                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://github.com/vincm1/Car-price-prediction" target="_blank" rel="noopener noreferrer">
                                                 <i class="fa-solid fa-code fa-2xl"></i></a>
                                         </button>
                                     </div>

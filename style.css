@@ -123,9 +123,64 @@ nav .navbar-brand:hover {
 
 /* INTRO */
 
+.container-animation {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animation {
+    height:50px;
+    overflow:hidden;
+    margin-left: 1rem;
+  }
+  
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    background-color:#20a7d8;
+  }
+  .second div {
+    background-color:#CD921E;
+  }
+  .third div {
+    background-color:#c10528;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+  
+
 .intro {
     background-color: var(--primary-color);
     color: #F6F5FF;
+}
+
+.intro-text {
+    padding: 70px 0 300px 0;
 }
 
 #intro-welcome {
@@ -140,11 +195,15 @@ nav .navbar-brand:hover {
 }
 
 .profile-picture-container img {
-    width: 80%; /* Ensure the image takes up the entire circle */
-    height: 60%; /* Ensure the image takes up the entire circle */
+    border-radius: 50%; /* Use 50% to make it a perfect circle */
     border: 2px solid var(--highlight-color);
-    box-shadow: red;
+    transition: cirlc 0.3s ease-in-out;
 }
+
+.profile-picture-container:hover #profile-picture {
+    border-width: 5px; /* Adjust the border width as desired */
+    border-color: var(--highlight-color); /* Adjust the border color as desired */
+  }
 
 .techstack li {
     list-style-type: none;
