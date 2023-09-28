@@ -13,7 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    
+    font-family: 'Bitter', serif;
 }
 
 /* BTNS & CMPNTS */
@@ -121,45 +122,83 @@ nav .navbar-brand:hover {
     color: var(--highlight-color);
 }
 
-/* INTRO */
 
+.navbar-brand {
+    display: inline-block;
+    padding: 8px;
+    transition: all 0.3s; /* smooth transition for hover effect */
+    position: relative;
+    overflow: hidden; /* hides the overflowing pseudo-elements */
+}
+
+.navbar-brand:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid currentColor; /* use the current font color for the border */
+    transform: scale(0); /* starts from 0 scale */
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid currentColor;
+    border-left-color: transparent; /* hides the left border */
+    border-bottom-color: transparent; /* hides the bottom border */
+    transform: scale(0); /* starts from 0 scale */
+    transition: transform 0.3s;
+}
+
+.navbar-brand:hover::before {
+    transform: scale(1); /* scale to full size on hover */
+}
+
+.navbar-brand:hover::after {
+    transform: scale(1); /* scale to full size on hover */
+}
+
+/* INTRO */
 .container-animation {
     color: #e5e5e5;
-    font-size: 2.26rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .animation {
-    height:50px;
-    overflow:hidden;
-    margin-left: 1rem;
-  }
-  
-  .animation > div > div {
-    padding: 0.25rem 0.75rem;
-    height:2.81rem;
+    flex-direction: row; 
+    justify-content: flex-start; 
+}
+
+#intro-welcome {
+    margin-right: 20px;
+    align-self: center; /* vertically center the text in the flex container */
+}
+
+.animation {
+    height: 2.81rem; /* adjust this according to your need */
+    overflow: hidden;
+    display: inline-block; 
+    vertical-align: middle; /* aligns the animation with the middle of adjacent texts */
+}
+
+.animation > div {
+    line-height: 2.81rem; /* give a line height instead of height */
     margin-bottom: 2.81rem;
-    display:inline-block;
-  }
-  
-  .animation div:first-child {
+    padding-left: 25px;
+    vertical-align: middle; /* aligns the text in the middle of its line height */
+}
+
+.animation div:first-child {
     animation: text-animation 8s infinite;
-  }
-  
-  .first div {
-    background-color:#20a7d8;
-  }
-  .second div {
-    background-color:#CD921E;
-  }
-  .third div {
-    background-color:#c10528;
-  }
-  
+}
+
   @keyframes text-animation {
     0% {margin-top: 0;}
     10% {margin-top: 0;}
@@ -172,7 +211,46 @@ nav .navbar-brand:hover {
     90% {margin-top: 0;}
     100% {margin-top: 0;}
   }
-  
+
+/* Basic setup for the animation */
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the container's direct text children */
+.container-fluid.intro > .container > *:not(.container-animation) {
+    opacity: 0; /* Set initial opacity to 0 to hide the elements */
+    animation-name: textReveal;
+    animation-duration: 1s; /* Animation duration can be adjusted */
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s; /* A slight delay for better effect */
+}
+
+/* Stagger the animation for different child elements */
+.container-fluid.intro #intro-welcome {
+    animation-delay: 0.6s;
+}
+
+.container-fluid.intro #intro-heading2 {
+    animation-delay: 0.8s;
+}
+
+.container-fluid.intro #intro-text {
+    animation-delay: 1s;
+}
+
+.container-fluid.intro .btn, .container-fluid.intro .icons {
+    animation-delay: 1.2s;
+}
+
 
 .intro {
     background-color: var(--primary-color);
@@ -187,11 +265,25 @@ nav .navbar-brand:hover {
     color: var(--highlight-color)
 }
 
+#intro-heading {
+    color: #838383;
+    font-size: 80px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#intro-text {
+    line-height: 40px;
+}
+
 /* ABOUT ME */
 
 .about-me {
     background-color: var(--primary-color);
     color: #F6F5FF;
+}
+
+.about-me p {
+    line-height: 30px;
 }
 
 .profile-picture-container img {
@@ -210,8 +302,8 @@ nav .navbar-brand:hover {
 }
 
 .techstack li::before {
-    font-family: 'Font Awesome 6 Free'; /* Use the Font Awesome font-family */
-    content: "\f005"; /* Use the Font Awesome icon Unicode (e.g., f005 for a star) */
+    font-family: 'Font Awesome 5'; /* Use the Font Awesome font-family */
+    content: "\f121"; /* Use the Font Awesome icon Unicode (e.g., f005 for a star) */
     margin-right: 10px; /* Adjust spacing between the icon and the list item text */
     color: var(--highlight-color); /* Set the color of the icon */
   }
@@ -300,6 +392,7 @@ nav .navbar-brand:hover {
     color: var(--text-color);
     padding-top: 10rem;
     padding-bottom: 7rem;
+    line-height: 40px;
 }
 
 /* FOOTER */
