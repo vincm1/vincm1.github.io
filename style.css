@@ -2,6 +2,7 @@
     /* ===== Colors ===== */
     --primary-color: #0A192F;
     --highlight-color: #4FCAB3;
+    --highlight-color_2: rgba(79, 202, 179, 0.1);
     --text-color: #f8f8ff;
 
     /* ====== Transition ====== */
@@ -251,14 +252,13 @@ nav .navbar-brand:hover {
     animation-delay: 1.2s;
 }
 
-
 .intro {
     background-color: var(--primary-color);
     color: #F6F5FF;
 }
 
 .intro-text {
-    padding: 70px 0 300px 0;
+    padding: 70px 0 200px 0;
 }
 
 #intro-welcome {
@@ -272,14 +272,15 @@ nav .navbar-brand:hover {
 }
 
 #intro-text {
-    line-height: 40px;
+    line-height: 45px;
 }
-
+ 
 /* ABOUT ME */
 
 .about-me {
     background-color: var(--primary-color);
     color: #F6F5FF;
+    padding-bottom: 200px;
 }
 
 .about-me p {
@@ -308,10 +309,39 @@ nav .navbar-brand:hover {
     color: var(--highlight-color); /* Set the color of the icon */
   }
 
-/* CURRICULUM */
-.curriculum {
+/* CV Section */
+.cv-section {
     background-color: var(--primary-color);
     color: #F6F5FF;
+    padding-bottom: 200px;
+}
+
+.stations-li {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+.stations-li li {
+    margin-bottom: 15px;
+    color: var(--highlight-color);
+}
+
+.stations-li li:hover{
+    background-color: var(--highlight-color_2);
+}
+
+.education-li {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+.education-li li {
+    margin-bottom: 15px;
+    color: var(--highlight-color);
+}
+
+.education-li li:hover{
+    background-color: var(--highlight-color_2);
 }
 
 /* PORTFOLIO */
@@ -321,7 +351,7 @@ nav .navbar-brand:hover {
     color: var(--text-color);
 }
 
-.carousel .card{
+.carousel .card {
     border: 2px solid var(--highlight-color);
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -354,19 +384,27 @@ nav .navbar-brand:hover {
     transition: opacity 0.3s ease;
 }
 
+.carousel .card .card-title {
+    color: var(--highlight-color);
+}
+
 #card-btn {
     background-color: var(--text-color-lightbg);
     border: none;
-    padding: 20px 20px;
+    align-self: center;
 }
 
 #card-btn a {
-    color: var(--light-bg);
+    padding: 12px;
 }
 
-#allprojects {
-    display: flex;
-    justify-content: flex-end;
+#card-btn a:hover {
+    border: 2px solid var(--highlight-color);
+    border-radius: 15%;
+}
+
+#card-btn a i {
+    color: var(--highlight-color);
 }
 
 
