@@ -70,9 +70,9 @@
                   <div class="fourth">Web Developer</div>
                 </section>
             </div>
-            <h2 class="mt-2 mb-5" id="intro-heading2">I build data-related things for the web.</h2>
-            <p class="mb-5" id="intro-text">I’m a full-stack Data Analyst & Scientist focused in building exceptional digital products.<br>
-                Currently, I’m focused on building human-centered data analytics at Ingram Micro.</p>
+            <h2 class="mt-2 mb-5" id="intro-heading2">I am trying to bridge the gap between data and the web.</h2>
+            <p class="mb-5" id="intro-text">Navigating the intricate webs of data to deliver digital excellence. My mission as a Full-stack Data Analyst & Scientist is to drive transformative data insights, creating unparalleled online experiences.<br>
+                Currently, on my journey as a Full-stack Data Analyst & Scientist revolves around designing innovative and insightful digital products.</p>
             <button class="btn btn-outline-primary me-3 my-4"><a href="mailto:vincent.michler94@gmail.com">Contact me</a></button>
             <a class="icons ms-2 me-2" href="https://www.github.com/vincm1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
             <a class="icons" href="https://www.linkedin.com/in/vincent-michler" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
@@ -81,7 +81,7 @@
 
     <div class="container-fluid about-me pt-1" id="about-me">
         <div class="container align-items-end" >
-            <div class="row" >
+            <div class="row">
                 <div class="col-lg-6 profile-picture-container pl-4 pb-sm-5">
                     <img src="./pictures/me.jpg" alt="Profile Picture" id="profile-picture">
                 </div>
@@ -107,7 +107,7 @@
                                 <li class="techstack">JavaScript</li>
                                 <li class="techstack">Flask</li>
                                 <li class="techstack">Streamlit</li>
-                                <li class="techstack">React</li>
+                                <li class="techstack">Django</li>
                             </ul>
                         </div>
                         <div class="col-6 techstack">
@@ -158,9 +158,8 @@
                         <h2>BMW (Munich, DE)</h2>
                         <h4>March 2021 - October 2021</h4>
                         <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
+                            <li>Focusing on online customer analytics with Adobe Analytics and Contentsquare</li>
+                            <li>Identified customer lifetime value of webshop customers with Python</li>
                         </ul>
                     </div>
                     <div class="stations-text ps-md-5" id="swan" style="display:none">
@@ -190,6 +189,7 @@
                   <ul class="education-li">
                     <li class="education-li-li ps-2" data-target="#aston">Aston University</li>
                     <li class="education-li-li ps-2" data-target="#fontys">Fontys University of Applied Sciences</li>
+                    <li class="education-li-li ps-2" data-target="#bootcamps">Bootcamps</li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
@@ -212,6 +212,16 @@
                             <br>Founded a small merchandise start-up during the programme.
                         </p>
                     </div>
+                    <div class="education-text ps-md-5" id="bootcamps" style="display:none">
+                        <h2>Data Science (CodeAcademy)</h2>
+                        <h6>2021</h6>
+                        <h2>Le Wagon</h2>
+                        <h6>2020</h6>
+                        <p>
+                           Completed the online course for Data Science on CodeAcademy and the 6-week bootcamp of Le Wagon
+                           Munich.
+                        </p>
+                    </div>
                 </div>
               </div>
         </div>
@@ -219,157 +229,154 @@
     
     <div class="container-fluid portfolio-section py-5" id="portfolio">
         <div class="container pl-5 my-5">   
-
-            <div class="row"> 
-                <div class="row heading pl-4">
-                    <div class="col-lg-4">
-                        <h1>Recent Projects</h1>
-                    </div>
-                    <div class="col-lg-8">
-                        <hr class="heading-line">
-                    </div>
+            
+            <div class="row heading pl-4">
+                <div class="col-lg-4">
+                    <h1>Recent Projects</h1>
                 </div>
+                <div class="col-lg-8">
+                    <hr class="heading-line">
+                </div>
+            </div>
 
-                <div id="carouselExample" class="carousel slide pt-2" data-bs-ride="carousel">
-                    <div class="row d-flex justify-content-end align-items-center justify-items-inline pt-4 pb-2">
-                        <div class="col-lg-auto">
-                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-                                <button class="btn btn-outline-primary">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-lg-auto">
-                            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-                                <button class="btn btn-outline-primary">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-lg-auto">
-                            <button class="btn btn-outline-primary">
-                                <a href="https://github.com/vincm1" target="_blank" rel="noopener noreferrer">View All</a>
+            <div id="carouselExample" class="carousel slide pt-2" data-bs-ride="carousel">
+
+                <div class="row pt-5 pb-3">
+                    <div class="col-lg-4 d-flex "> <!-- Combining the columns, adding Flex utilities -->
+                        <!-- Carousel Controls -->
+                        <div class="d-flex align-items-center"> <!-- Flex container for the carousel controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            
                         </div>
                     </div>
+                    <div class="col-lg-8 d-flex justify-content-end pe-4"> <!-- Combining the columns, adding Flex utilities -->
+                        <button class="btn btn-outline-primary align-self-end">
+                            <a href="https://github.com/vincm1" target="_blank" rel="noopener noreferrer">View All</a>
+                        </button>
+                    </div>
+                </div>
                 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <!-- Card 1 -->
+                            <div class="card justify-content center ">
+                                <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 1">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title text-center py-2">Implicit RecSys comparison</h5>
+                                    <p class="card-text">For my master thesis project I analyzed various <span>linear</span> and 
+                                        <span>Deep Learning</span> RecSys for implicit customer purchase data of an IT-distributor.
+                                    </p>
+                                    <div class="d-flex justify-content-center py-3">
+                                        <button class="btn btn-outline-primary align-items-center" id="card-btn">
+                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="card mx-2">
+                                <img src="./pictures/portfolio_pictures/spreadsheet.jpg" class="card-img-top" alt="Image 2">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title text-center py-2">IQSheets</h5>
+                                    <p class="card-text">Developed an ChatGPT API integration front- and backend focusing on spreadsheet tasks</p>
+                                    <div class="d-flex justify-content-center py-3">
+                                        <button class="btn btn-primary" id="card-btn">
+                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="card mx-2">
+                                <img src="./pictures/portfolio_pictures/loan.jpg" class="card-img-top" alt="Image 3">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title text-center py-2" >Loan Classification</h5>
+                                    <p class="card-text">Classification project for a Kaggle challenge classifying defaulting credits with XGBoostClassifier and
+                                        Random Forest Classifier.
+                                    </p>
+                                    <div class="d-flex justify-content-center py-3">
+                                        <button class="btn btn-primary" id="card-btn">
+                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i></a>
+                                        </button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items with multiple cards as needed -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <!-- Card 1 -->
+                            <div class="card">
+                                <img src="./pictures/portfolio_pictures/car.jpg" class="card-img-top" alt="car">
+                                <div class="card-body d-flex flex-column justify-content-between"> <!-- Added d-flex and flex-column here -->
+                                    <h5 class="card-title text-center py-2">Car Price predictor</h5>
+                                    <p class="card-text">Tested various Regression models on a Kaggle dataset for used cars.</p>
+                                    <div class="d-flex justify-content-center py-3"> <!-- Added a wrapper div with d-flex and justify-content-center -->
+                                        <button class="btn btn-primary" id="card-btn">
+                                            <a href="https://github.com/vincm1/Car-price-prediction" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="card mx-2">
+                                <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 2">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title text-center py-2">Stealth</h5>
+                                    <p class="card-text">Still in the making.</p>
+                                    <div class="d-flex justify-content-center py-3">
+                                        <button class="btn btn-primary" id="card-btn">
+                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="card mx-2 ">
+                                <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 3">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title text-center py-2">Stealth</h5>
+                                    <p class="card-text">Still in the making</p>
+                                    <div class="d-flex justify-content-center py-3">
+                                        <button class="btn btn-primary" id="card-btn">
+                                            <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-solid fa-code fa-2xl"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="row">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center">
-                                    <!-- Card 1 -->
-                                    <div class="card justify-content center mx-2">
-                                        <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 1">
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <h5 class="card-title text-center py-2">Implicit RecSys comparison</h5>
-                                            <p class="card-text">For my master thesis project I analyzed various <span>linear</span> and 
-                                                <span>Deep Learning</span> RecSys for implicit customer purchase data of an IT-distributor.
-                                            </p>
-                                            <div class="d-flex justify-content-center py-3">
-                                                <button class="btn btn-outline-primary align-items-center" id="card-btn">
-                                                    <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Card 2 -->
-                                    <div class="card mx-2">
-                                        <img src="./pictures/portfolio_pictures/spreadsheet.jpg" class="card-img-top" alt="Image 2">
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <h5 class="card-title text-center py-2">IQSheets</h5>
-                                            <p class="card-text">Developed an ChatGPT API integration front- and backend focusing on spreadsheet tasks</p>
-                                            <div class="d-flex justify-content-center py-3">
-                                                <button class="btn btn-primary" id="card-btn">
-                                                    <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Card 3 -->
-                                    <div class="card mx-2">
-                                        <img src="./pictures/portfolio_pictures/loan.jpg" class="card-img-top" alt="Image 3">
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <h5 class="card-title text-center py-2" >Loan Classification</h5>
-                                            <p class="card-text">Classification project for a Kaggle challenge classifying defaulting credits with XGBoostClassifier and
-                                                Random Forest Classifier.
-                                            </p>
-                                            <div class="d-flex justify-content-center py-3">
-                                                <button class="btn btn-primary" id="card-btn">
-                                                    <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i></a>
-                                                </button>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add more carousel items with multiple cards as needed -->
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                                    <!-- Card 1 -->
-                                    <div class="card mx-2">
-                                        <img src="./pictures/portfolio_pictures/car.jpg" class="card-img-top" alt="car">
-                                        <div class="card-body d-flex flex-column justify-content-between"> <!-- Added d-flex and flex-column here -->
-                                            <h5 class="card-title text-center py-2">Car Price predictor</h5>
-                                            <p class="card-text">Tested various Regression models on a Kaggle dataset for used cars.</p>
-                                            <div class="d-flex justify-content-center py-3"> <!-- Added a wrapper div with d-flex and justify-content-center -->
-                                                <button class="btn btn-primary card" id="card-btn">
-                                                    <a href="https://github.com/vincm1/Car-price-prediction" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i>
-                                                    </a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Card 2 -->
-                                    <div class="card mx-2">
-                                        <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 2">
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <h5 class="card-title text-center py-2">Card 5</h5>
-                                            <p class="card-text">Consectetur adipiscing elit.</p>
-                                            <div class="d-flex justify-content-center py-3">
-                                                <button class="btn btn-primary card" id="card-btn">
-                                                    <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Card 3 -->
-                                    <div class="card mx-2 ">
-                                        <img src="./pictures/portfolio_pictures/recsys.jpg" class="card-img-top" alt="Image 3">
-                                        <div class="card-body d-flex flex-column justify-content-between">
-                                            <h5 class="card-title text-center py-2">Card 6</h5>
-                                            <p class="card-text">Sed do eiusmod tempor.</p>
-                                            <div class="d-flex justify-content-center py-3">
-                                                <button class="btn btn-primary card" id="card-btn">
-                                                    <a href="https://github.com/vincm1/RecSys_Implicit" target="_blank" rel="noopener noreferrer">
-                                                        <i class="fa-solid fa-code fa-2xl"></i></a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-
+    
     <div class="container-fluid contact-form" id="contact">
         <div class="container text-center"> 
             <div class="col-lg-6 mx-auto ">
+                <h4>Contact Me!</h4>
                 <p class="pb-3">Feel free to contact me for any question. For open-source projects, please open an issue or pull request on Github. If you want to follow my work, reach me on Twitter.</p>
                 <button class="btn btn-outline-primary me-3"><a href="mailto:vincent.michler94@gmail.com">Contact me</a></button>
                 <a class="icons ms-2 me-2" href="https://www.github.com/vincm1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
