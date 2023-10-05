@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-family: 'Bitter', serif;
 }
 
@@ -80,26 +79,21 @@ nav {
 }
 
 nav .navbar-brand {
+    display: inline-block;
     color: var(--highlight-color);
-    border: 1px solid var(--highlight-color);
+    padding: 10px 10px; 
+    border: 2px solid var(--highlight-color);
+    border-radius: 50%;
+    transition: transform 0.5s ease, border-color 0.3s ease; 
 }
 
-/* Style for the default state of navbar-brand */
-nav .navbar-brand {
-    color: var(--highlight-color);
-    border: 1px solid var(--highlight-color);
-    border-radius: 50%; /* Makes it circular */
-    padding: 8px; /* Adjust the padding to control the size */
-    transition: all 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Style for the hovered state of navbar-brand */
 nav .navbar-brand:hover {
-    border: 2px solid var(--highlight-color); /* Increase border width on hover */
+    color: var(--highlight-color);
+    transform: rotate(360deg);
 }
 
 .navbar .nav-link {
-    color: #F6F5FF;
+    color: var(--text-color);
 }
 
 .navbar .nav-link:hover {
@@ -108,62 +102,12 @@ nav .navbar-brand:hover {
     transition: all 0.7s ease;  
 }
 
-#nav-icon {
-    background-color: transparent;
-}
-
-#nav-icon:hover{
-    border: 2px solid var(--highlight-color); /* Add your preferred border color */
-    border-radius: 50%; /* Makes the border circular */
-    padding: 15px; /* Add padding to control the size of the circle */
-    transition: all 0.1s ease; /* Add smooth transition */    
-}
-
 #nav-icon i {
     color: var(--highlight-color);
 }
 
-
-.navbar-brand {
-    display: inline-block;
-    padding: 8px;
-    transition: all 0.3s; /* smooth transition for hover effect */
-    position: relative;
-    overflow: hidden; /* hides the overflowing pseudo-elements */
-}
-
-.navbar-brand:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 2px solid currentColor; /* use the current font color for the border */
-    transform: scale(0); /* starts from 0 scale */
-    transition: transform 0.3s;
-}
-
-.navbar-brand:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 2px solid currentColor;
-    border-left-color: transparent; /* hides the left border */
-    border-bottom-color: transparent; /* hides the bottom border */
-    transform: scale(0); /* starts from 0 scale */
-    transition: transform 0.3s;
-}
-
-.navbar-brand:hover::before {
-    transform: scale(1); /* scale to full size on hover */
-}
-
-.navbar-brand:hover::after {
-    transform: scale(1); /* scale to full size on hover */
+.navbar .navbar-toggler-icon {
+    background-color: #4FCAB3;
 }
 
 /* INTRO */
@@ -183,7 +127,7 @@ nav .navbar-brand:hover {
 }
 
 .animation {
-    height: 2.81rem; /* adjust this according to your need */
+    height: 2.9rem; /* adjust this according to your need */
     overflow: hidden;
     display: inline-block; 
     vertical-align: middle; /* aligns the animation with the middle of adjacent texts */
@@ -298,16 +242,26 @@ nav .navbar-brand:hover {
     border-color: var(--highlight-color); /* Adjust the border color as desired */
   }
 
+  @media (max-width: 767px) {
+    #profile-picture {
+        width: 70%; /* or whatever size you prefer for smaller screens */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* centers the image when its width is reduced */
+    }
+}
+
 .techstack li {
     list-style-type: none;
 }
 
 .techstack li::before {
-    font-family: 'Font Awesome 5'; /* Use the Font Awesome font-family */
-    content: "\f121"; /* Use the Font Awesome icon Unicode (e.g., f005 for a star) */
-    margin-right: 10px; /* Adjust spacing between the icon and the list item text */
-    color: var(--highlight-color); /* Set the color of the icon */
-  }
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* for solid icons */
+    content: "\f121"; 
+    margin-right: 12px;
+    color: var(--highlight-color);
+}
 
 /* CV Section */
 .cv-section {
@@ -332,7 +286,6 @@ nav .navbar-brand:hover {
 
 .education-li {
     list-style-type: none;
-    padding-left: 0; 
 }
 
 .education-li li {

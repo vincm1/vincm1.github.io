@@ -21,6 +21,7 @@
   </head>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container mt-2">
           <a class="navbar-brand" href="#">VM</a>
@@ -28,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#about-me">About Me</a>
                 </li>
@@ -41,15 +42,18 @@
                 <li class="nav-item pe-3">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <li class="nav-item pe-3 pt-1">
-                    <a class="icons" href="https://www.linkedin.com/in/vincent-michler" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                </li>
-                <li class="nav-item pe-3 pt-1">
-                    <a class="icons" href="https://www.github.com/vincm1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
-                </li>
-                <li class="nav-item pe-3 pt-1">
-                    <a class="icons" href="mailto:vincent.michler94@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                </li>
+                <div class="icon-group d-flex">
+                    <li class="nav-item pe-2 pt-2">
+                        <a class="icons" href="https://www.linkedin.com/in/vincent-michler" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-itemp pe-2 pt-2">
+                        <a class="icons" href="https://www.github.com/vincm1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item pt-2">
+                        <a class="icons" href="mailto:vincent.michler94@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                    </li>
+                </div>
+                
             </ul>
           </div>
         </div>
@@ -57,7 +61,7 @@
 
     <div class="container-fluid intro py-4">
         <div class="container intro-text my-5">
-            <div class="container-animation pb-5">
+            <div class="container-animation inline-block pb-5">
                 <p id="intro-welcome">Welcome to my page 👋 I'm</p>
                 <section class="animation">
                   <div class="first">Vincent Michler</div>
@@ -78,7 +82,7 @@
     <div class="container-fluid about-me pt-1" id="about-me">
         <div class="container align-items-end" >
             <div class="row" >
-                <div class="col-lg-6 profile-picture-container pl-4">
+                <div class="col-lg-6 profile-picture-container pl-4 pb-sm-5">
                     <img src="./pictures/me.jpg" alt="Profile Picture" id="profile-picture">
                 </div>
                 <div class="col-lg-6">
@@ -93,11 +97,11 @@
                     <p class="p-2">I am a <span>Data Scientist</span> with a focus on building exceptional digital products. 
                         Currently, I’m focused on building data analytics, human-centered products at Ingram Micro.</p>
                     <p class="p-2">I also worked as Web Data Analyst at <span>BMW</span> and did research on 
-                        <span></span>implicit linear and Deep Learning <span>Recommender Systems</span> for 
-                        <span><a href="https://www.aston.ac.uk/" target="_blank" rel="noopener noreferrer">Aston University</a></span>.</p>
+                        implicit linear and Deep Learning <span>Recommender Systems</span> for 
+                        <span>Aston University</span>.</p>
                     <p class="p-2">The <span>Techstack</span> I have worked with so far:</p>
                     <div class="row p-2">
-                        <div class="col-lg-6 techstack">
+                        <div class="col-6 techstack">
                             <ul>
                                 <li class="techstack">Python</li>
                                 <li class="techstack">JavaScript</li>
@@ -106,7 +110,7 @@
                                 <li class="techstack">React</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 techstack">
+                        <div class="col-6 techstack">
                             <ul>
                                 <li class="techstack">Microsoft PowerBi</li>
                                 <li class="techstack">Looker</li>
@@ -132,15 +136,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2 pe-5 stations">
+                <div class="col-lg-2 stations">
                   <ul class="stations-li">
-                    <li class="stations-li-li p-2" data-target="#ingram">Ingram Micro</li>
-                    <li class="stations-li-li p-2" data-target="#bmw">BMW</li>
-                    <li class="stations-li-li p-2" data-target="#swan">Swan Management</li>
+                    <li class="stations-li-li ps-2" data-target="#ingram">Ingram Micro</li>
+                    <li class="stations-li-li ps-2" data-target="#bmw">BMW</li>
+                    <li class="stations-li-li ps-2" data-target="#swan">Swan Management</li>
                   </ul>
                 </div>
-                <div class="col-6">
-                    <div class="stations-text ms-5" id="ingram">
+                <div class="col-lg-6">
+                    <div class="stations-text ps-md-5" id="ingram">
                         <h2>Ingram Micro</h2>
                         <h4>November 2021 - today</h4>
                         <ul>
@@ -149,7 +153,7 @@
                             <li>Building data analytics products for the web</li>
                         </ul>
                     </div>
-                    <div class="stations-text ms-5" id="bmw" style="display:none">
+                    <div class="stations-text ps-md-5" id="bmw" style="display:none">
                         <h2>BMW</h2>
                         <h4>March 2021 - October 2021</h4>
                         <ul>
@@ -158,7 +162,7 @@
                             <li>Lorem Ipsum</li>
                         </ul>
                     </div>
-                    <div class="stations-text ms-5" id="swan" style="display:none">
+                    <div class="stations-text ps-md-5" id="swan" style="display:none">
                         <h2>Swan Management (Freelance)</h2>
                         <h4>July 2020 - February 2021</h4>
                         <ul>
@@ -182,31 +186,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2 pe-5 educations">
+                <div class="col-lg-2 educations">
                   <ul class="education-li">
-                    <li class="education-li-li p-2" data-target="#aston">Aston University</li>
-                    <li class="education-li-li p-2" data-target="#fontys">Fontys University of Applied Sciences</li>
+                    <li class="education-li-li ps-2" data-target="#aston">Aston University</li>
+                    <li class="education-li-li ps-2" data-target="#fontys">Fontys University of Applied Sciences</li>
                   </ul>
                 </div>
-                <div class="col-6">
-                    <div class="education-text ms-5" id="aston">
+                <div class="col-lg-6">
+                    <div class="education-text ps-md-5" id="aston">
                         <h2>Aston University (Birmingham, UK)</h2>
                         <h4>2021 - 2023</h4>
-                        <ul>
-                            <li>Building data analytics products for the web</li>
-                            <li>Developing data-driven products for the web</li>
-                            <li>Building data analytics products for the web</li>
-                        </ul>
+                        <p>
+                            MSc in Business Analytics, focusing on Data Analytics and Science for businesses.
+                            <br> Did research on implicit Recommender Systems on linear and Deep Learning methods for a 
+                            German IT-distributor.
+                        </p>
                     </div>
-                    <div class="education-text ms-5" id="fontys" style="display:none">
+                    <div class="education-text ps-md-5" id="fontys" style="display:none">
                         <h2>Fontys International Business School (Venlo, NL)</h2>
                         <h4>Bachelor of Business Administration</h4>
                         <h6>2014 - 2018</h6>
-                        <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
+                        <p>
+                            MSc in Business Analytics, focusing on Data Analytics and Science for businesses.
+                            <br> Did research on implicit Recommender Systems on linear and Deep Learning methods for a 
+                            German IT-distributor.
+                        </p>
                     </div>
                 </div>
               </div>
